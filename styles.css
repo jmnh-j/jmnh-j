@@ -4,7 +4,6 @@ body {
   margin: 0;
   padding: 0;
   color: #000;
-  /* Bold black text */
   font-weight: bold;
 }
 
@@ -97,57 +96,32 @@ td {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-form {
-  margin-top: 20px;
-  background-color: #fff;
-  padding: 20px;
-  border: 2px solid gray;
-  border-radius: 8px;
+.skills-list {
+  list-style: none;
+  padding-left: 0;
 }
 
-input,
-select,
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 8px;
-  margin-bottom: 15px;
-  box-sizing: border-box;
-  border: 1px solid gray;
-  border-radius: 4px;
-  font-weight: bold;
-}
-
-input[type="submit"] {
-  background-color: #B9375E;
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px 15px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-input[type="submit"]:hover {
-  background-color: #a02f51;
-  transform: scale(1.05);
+.skills-list li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
 
-  /* Profile Image */
   .profile-pic {
     width: 100px;
     height: 100px;
   }
 
-  /* Header: Stack profile picture and text */
   .header {
     flex-direction: column;
     text-align: center;
   }
 
-  /* Gallery: Stack images vertically */
   .gallery {
     flex-direction: column;
   }
@@ -157,26 +131,13 @@ input[type="submit"]:hover {
     margin: auto;
   }
 
-  /* Table: Make it more readable */
   table {
     font-size: 14px;
-  }
-
-  /* Form: Inputs and buttons are already full width, but let's adjust spacing */
-  form {
-    padding: 15px;
-  }
-
-  input,
-  select,
-  textarea {
-    margin-bottom: 10px;
   }
 }
 
 @media screen and (max-width: 480px) {
 
-  /* Further reduce profile image size */
   .profile-pic {
     width: 90px;
     height: 90px;
@@ -191,7 +152,6 @@ input[type="submit"]:hover {
     font-size: 1.25rem;
   }
 
-  /* Section padding and margins */
   .container {
     padding: 15px;
   }
@@ -199,8 +159,7 @@ input[type="submit"]:hover {
   .section {
     margin-top: 20px;
   }
-
-  /* Table layout: Stack table rows vertically */
+ 
   table {
     font-size: 12px;
     border: none;
@@ -210,8 +169,7 @@ input[type="submit"]:hover {
   table td {
     padding: 8px;
   }
-
-  /* Gallery image size */
+  
   .gallery img {
     width: 100%;
     margin-bottom: 10px;
